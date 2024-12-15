@@ -1,0 +1,144 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #63e0ff, #3744ff, #00f7ff, #515bd4); /* Degradê suave igual ao Instagram */
+  background-size: 200% 200%;
+  animation: background-wave 10s ease infinite; /* Efeito de onda */
+  color: white; /* Para melhor contraste com o texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+.header-logo {
+  width: 250px; /* Ajusta o tamanho da logo */
+  height: auto;
+  margin-bottom: -20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.divider {
+  font-size: 20px;
+  margin: 0 5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo individual dos botões */
+.whatsapp {
+  background-color: #25d366;
+}
+
+.whatsapp:hover {
+  transform: scale(1.05);
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background-size: 200% 200%;
+  animation: gradient-wave 4s ease infinite; /* Efeito de onda gradiente */
+}
+
+.instagram:hover {
+  transform: scale(1.05);
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.facebook:hover {
+  transform: scale(1.05);
+}
+
+.olx {
+  background-color: #7300e6; /* Roxo para o botão da OLX */
+}
+
+.olx:hover {
+  transform: scale(1.05);
+}
+
+.olx-icon {
+  width: 24px; /* Ajusta o tamanho da logo OLX */
+  height: auto;
+}
+
+/* Estilo da logo na parte inferior */
+.footer-logo img {
+  width: 550px; /* Ajuste o tamanho da logo */
+  height: auto;
+  margin-top: 10px;
+}
+
+@keyframes background-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+}
